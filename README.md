@@ -1,3 +1,3 @@
 # background
 
-![Background.png](background.png)
+![background.png](background.png)
