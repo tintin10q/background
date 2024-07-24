@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equation</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: "AR PL KaitiM Big5";
+            /*font-family: "AR PL KaitiM GB";*/
+            box-sizing: border-box;
+        }
+
+        .math {
+            font-family: "IPAMincho";
+            font-size: 75pt;
+        }
+
+        .colon {
+            font-family: "Caladea";
+            font-size: 80pt;
+            position: relative; bottom: .7rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<div style="margin: auto; width: fit-content; font-size: 80pt; text-align: center">
+    A = g<sup>a</sup>
+    <br>
+    B = g<sup>b</sup>
+    <br>
+    <br>
+    A<sup>b</sup> = (g<sup>a</sup>)<sup>b</sup> = g<sup>ab</sup> = g<sup>ba</sup> = (g<sup>b</sup>)<sup>a</sup> = B<sup>a</sup>
+    <br>
+    <br>
+    <div style="display: flex; justify-content: center">
+    <div style="border-top: white solid 1px; width: 80rem; margin-top: 2.8rem; margin-bottom: 2rem"></div>
+    </div>
+    <br>
+    <div style="text-align: left">
+        pure<span class="math"> <span class="colon">::</span> </span>a<span class="math"> → </span> m a
+        <br>
+        <span class="math">>>= <span class="colon">::</span> </span>m a<span class="math"> → (</span>a<span class="math"> → </span>m b<span
+            class="math">) →</span> m b
+        <br>
+        <div style="padding: 1.5rem"></div>
+        <span class="math"><$> <span class="colon">::</span> (</span>a<span class="math"> → </span>b<span class="math">) → </span>m a<span
+            class="math"> → </span>m b
+        <br>
+        <span class="math"><*> <span class="colon">::</span> </span>m<span class="math"> (</span>a<span class="math"> → </span>b<span class="math">) → </span>m
+        a<span class="math"> → </span>m b
+        <br>
+        <div style="padding: 1.5rem"></div>
+        <span class="math"><$> </span>f m = m<span class="math"> >>= </span>pure<span class="math"> ∘ </span>f
+        <br>
+        <span class="math"><*> </span>g m = g<span class="math"> >>= λ</span>f.m<span class="math"> >>= </span>pure<span
+            class="math"> ∘ </span>f
+        <br>
+    </div>
+</div>
+</body>
+</html>
