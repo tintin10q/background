@@ -1,0 +1,5 @@
+.venv
+*.png~
+*.kra~
+*.pttx#
+.~lock.background.pptx#
